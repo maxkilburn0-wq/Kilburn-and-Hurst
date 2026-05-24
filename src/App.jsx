@@ -118,7 +118,7 @@ export default function App() {
     if (!form.name || !form.email) return;
     setSubmitting(true);
     try {
-      await fetch("https://formspree.io/f/kilburnhurst@outlook.com", {
+      await fetch(https://formspree.io/f/mqejdkle, {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({ ...form, _replyto: form.email, _subject: `New enquiry from ${form.name} — ${form.business}` }),
