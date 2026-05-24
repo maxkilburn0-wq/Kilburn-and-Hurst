@@ -118,10 +118,17 @@ export default function App() {
     if (!form.name || !form.email) return;
     setSubmitting(true);
     try {
-      await fetch("https://formspree.io/f/xjgzevaq", {
+      await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({ ...form, _replyto: form.email, _subject: `New enquiry from ${form.name} — ${form.business}` }),
+        body: JSON.stringify({
+          access_key: "5079c0b7-0bc0-497c-a716-4dbed288ed65",
+          name: form.name,
+          email: form.email,
+          business: form.business,
+          message: form.message,
+          subject: `New enquiry from ${form.name} — ${form.business}`,
+        }),
       });
     } catch (e) {}
     setSubmitted(true);
