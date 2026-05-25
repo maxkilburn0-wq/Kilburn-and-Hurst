@@ -7,7 +7,7 @@ const SERVICES = [
     title: "Web Design",
     tagline: "Your shopfront. Done properly.",
     desc: "Custom websites built to convert visitors into customers. Fast, mobile-first, and live within 7 days.",
-    price: "£200",
+    price: "£275",
     monthly: null,
     features: ["Up to 5 pages", "Mobile optimised", "Contact form", "Domain setup", "Live in 7 days"],
   },
@@ -17,7 +17,7 @@ const SERVICES = [
     title: "AI & Automation",
     tagline: "Your business, running 24/7.",
     desc: "Chatbots that answer customers, capture leads, and book appointments while you sleep.",
-    price: "From £30/mo",
+    price: "From £40/mo",
     monthly: "add-on",
     features: ["Trained on your business", "Lead capture", "FAQ answering", "Website integration", "Live in 5 days"],
   },
@@ -28,7 +28,7 @@ const SERVICES = [
     tagline: "Get found. Get customers.",
     desc: "Google Business setup, on-page SEO, and local search domination so new customers find you first.",
     price: "£100",
-    monthly: "+ £27/mo",
+    monthly: "+ £35/mo",
     features: ["Google Business setup", "On-page SEO", "Directory listings", "Search Console", "Monthly report"],
   },
   {
@@ -37,7 +37,7 @@ const SERVICES = [
     title: "Social Media",
     tagline: "Look the part online.",
     desc: "Profile refreshes, content strategy, and monthly management that builds your presence and trust.",
-    price: "£150",
+    price: "£295",
     monthly: "one-off",
     features: ["Bio & profile rewrite", "Cover image", "Pinned post", "Content strategy", "Monthly management"],
   },
@@ -48,7 +48,7 @@ const SERVICES = [
     tagline: "Keep customers coming back.",
     desc: "Email sequences, review automation, and retention campaigns that turn one-time buyers into regulars.",
     price: "£160",
-    monthly: "+ £30/mo",
+    monthly: "+ £40/mo",
     features: ["Review automation", "Email sequences", "Re-engagement", "SMS campaigns", "Monthly send"],
   },
   {
@@ -58,7 +58,7 @@ const SERVICES = [
     tagline: "Cut costs. Run leaner.",
     desc: "Inventory tracking, waste reduction, and automated systems that save local businesses thousands per year.",
     price: "£130",
-    monthly: "+ £25/mo",
+    monthly: "+ £50/mo",
     features: ["Waste tracking setup", "Staff training", "Weekly report", "Cost analysis", "Tailored to your business"],
   },
 ];
@@ -521,8 +521,8 @@ export default function App() {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "20px" }}>
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "24px", fontWeight: 600, color: "#f8f7f4" }}>Website</h3>
                 <div style={{ textAlign: "right" }}>
-                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", fontWeight: 600, color: "#f8f7f4", lineHeight: 1 }}>£200</div>
-                  <div style={{ fontSize: "11px", color: "#444", marginTop: "2px" }}>one-off + £10/yr domain</div>
+                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", fontWeight: 600, color: "#f8f7f4", lineHeight: 1 }}>£275</div>
+                  <div style={{ fontSize: "11px", color: "#444", marginTop: "2px" }}>£10/yr domain</div>
                 </div>
               </div>
               {["Custom website — live in 7 days", "Mobile optimised", "Contact form", "Your own domain (.co.uk)", "No monthly fee"].map((f, i) => (
@@ -543,8 +543,8 @@ export default function App() {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "20px" }}>
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "24px", fontWeight: 600, color: "#111" }}>Website + AI</h3>
                 <div style={{ textAlign: "right" }}>
-                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", fontWeight: 600, color: "#111", lineHeight: 1 }}>£200</div>
-                  <div style={{ fontSize: "11px", color: "#aaa", marginTop: "2px" }}>setup + £20/mo + £10/yr</div>
+                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", fontWeight: 600, color: "#111", lineHeight: 1 }}>£275</div>
+                  <div style={{ fontSize: "11px", color: "#aaa", marginTop: "2px" }}>setup + £50/mo + £10/yr</div>
                 </div>
               </div>
               {["Everything in Standard", "AI chatbot — answers customers 24/7", "Unlimited website updates", "Lead capture & automation", "Hosting covered", "Direct WhatsApp support"].map((f, i) => (
