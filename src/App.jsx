@@ -177,7 +177,13 @@ export default function App() {
 
         {/* Hero */}
         <div style={{ padding: "80px 20px 60px", position: "relative", overflow: "hidden" }}>
-          <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "600px", height: "600px", borderRadius: "50%", background: "radial-gradient(circle, rgba(212,175,55,0.06) 0%, transparent 70%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "70vw", opacity: 0.03, pointerEvents: "none", userSelect: "none", zIndex: 0 }}>
+          <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "auto" }}>
+            <text x="10" y="130" fontFamily="Playfair Display, Georgia, serif" fontSize="140" fontWeight="700" fill="#fff">K</text>
+            <line x1="105" y1="10" x2="105" y2="150" stroke="#fff" strokeWidth="4"/>
+            <text x="108" y="120" fontFamily="Playfair Display, Georgia, serif" fontSize="110" fontWeight="700" fill="#fff">H</text>
+          </svg>
+        </div>
 
           <div style={{ position: "relative", maxWidth: "600px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "24px" }}>
@@ -336,12 +342,16 @@ export default function App() {
         <div style={{
           position: "absolute", top: "50%", left: "50%",
           transform: "translate(-50%, -50%)",
-          fontFamily: "'Playfair Display', serif",
-          fontSize: "clamp(100px, 30vw, 260px)",
-          fontWeight: 700, color: "rgba(0,0,0,0.025)",
           pointerEvents: "none", userSelect: "none",
-          whiteSpace: "nowrap", lineHeight: 1,
-        }}>K&H</div>
+          opacity: 0.04, zIndex: 0,
+          width: "70vw",
+        }}>
+          <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "auto" }}>
+            <text x="10" y="130" fontFamily="Playfair Display, Georgia, serif" fontSize="140" fontWeight="700" fill="#111">K</text>
+            <line x1="105" y1="10" x2="105" y2="150" stroke="#111" strokeWidth="4"/>
+            <text x="108" y="120" fontFamily="Playfair Display, Georgia, serif" fontSize="110" fontWeight="700" fill="#111">H</text>
+          </svg>
+        </div>
 
         {/* Floating badge */}
         <div style={{
