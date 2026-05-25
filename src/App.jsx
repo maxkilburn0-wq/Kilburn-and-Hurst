@@ -17,8 +17,8 @@ const SERVICES = [
     title: "AI & Automation",
     tagline: "Your business, running 24/7.",
     desc: "Chatbots that answer customers, capture leads, and book appointments while you sleep.",
-    price: "From £40/mo",
-    monthly: "add-on",
+    price: "£50/mo",
+    monthly: "£50/mo",
     features: ["Trained on your business", "Lead capture", "FAQ answering", "Website integration", "Live in 5 days"],
   },
   {
@@ -27,7 +27,7 @@ const SERVICES = [
     title: "SEO & Visibility",
     tagline: "Get found. Get customers.",
     desc: "Google Business setup, on-page SEO, and local search domination so new customers find you first.",
-    price: "£100",
+    price: "£250",
     monthly: "+ £35/mo",
     features: ["Google Business setup", "On-page SEO", "Directory listings", "Search Console", "Monthly report"],
   },
@@ -47,8 +47,8 @@ const SERVICES = [
     title: "Marketing",
     tagline: "Keep customers coming back.",
     desc: "Email sequences, review automation, and retention campaigns that turn one-time buyers into regulars.",
-    price: "£160",
-    monthly: "+ £40/mo",
+    price: "£150",
+    monthly: "+ £35/mo",
     features: ["Review automation", "Email sequences", "Re-engagement", "SMS campaigns", "Monthly send"],
   },
   {
@@ -57,7 +57,7 @@ const SERVICES = [
     title: "Operations",
     tagline: "Cut costs. Run leaner.",
     desc: "Inventory tracking, waste reduction, and automated systems that save local businesses thousands per year.",
-    price: "£180",
+    price: "£250",
     monthly: "+ £50/mo",
     features: ["Waste tracking setup", "Staff training", "Weekly report", "Cost analysis", "Tailored to your business"],
   },
@@ -382,7 +382,7 @@ export default function App() {
             }}>Our Services ↓</button>
           </div>
           <div style={{ display: "flex", gap: "32px", flexWrap: "wrap", marginTop: "48px" }}>
-            {[["£200", "Website build"], ["7 days", "To go live"], ["£0", "Hidden fees"], ["24/7", "AI running"]].map(([v, l]) => (
+            {[["£275", "Website build"], ["7 days", "To go live"], ["£0", "Hidden fees"], ["24/7", "AI running"]].map(([v, l]) => (
               <div key={v}>
                 <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "22px", fontWeight: 600 }}>{v}</div>
                 <div style={{ fontSize: "11px", color: "#aaa", marginTop: "2px" }}>{l}</div>
@@ -434,7 +434,7 @@ export default function App() {
               <p style={{ fontSize: "13px", color: "#888", fontWeight: 300, lineHeight: 1.6, maxWidth: "260px" }}>Custom websites built to convert. Fast, mobile-first, live in 7 days.</p>
             </div>
             <div style={{ textAlign: "right", flexShrink: 0, marginLeft: "16px" }}>
-              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", color: "#f8f7f4", fontWeight: 600 }}>£200</div>
+              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", color: "#f8f7f4", fontWeight: 600 }}>£275</div>
               <div style={{ fontSize: "12px", color: "#555", marginTop: "4px" }}>See packages →</div>
             </div>
           </div>
@@ -522,7 +522,7 @@ export default function App() {
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "24px", fontWeight: 600, color: "#f8f7f4" }}>Website</h3>
                 <div style={{ textAlign: "right" }}>
                   <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", fontWeight: 600, color: "#f8f7f4", lineHeight: 1 }}>£275</div>
-                  <div style={{ fontSize: "11px", color: "#444", marginTop: "2px" }}>£10/yr domain</div>
+                  <div style={{ fontSize: "11px", color: "#444", marginTop: "2px" }}>one-off · domain £10/yr</div>
                 </div>
               </div>
               {["Custom website — live in 7 days", "Mobile optimised", "Contact form", "Your own domain (.co.uk)", "No monthly fee"].map((f, i) => (
@@ -544,10 +544,10 @@ export default function App() {
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "24px", fontWeight: 600, color: "#111" }}>Website + AI</h3>
                 <div style={{ textAlign: "right" }}>
                   <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", fontWeight: 600, color: "#111", lineHeight: 1 }}>£275</div>
-                  <div style={{ fontSize: "11px", color: "#aaa", marginTop: "2px" }}>setup + £50/mo + £10/yr</div>
+                  <div style={{ fontSize: "11px", color: "#aaa", marginTop: "2px" }}>setup · £50/mo AI · domain £10/yr</div>
                 </div>
               </div>
-              {["Everything in Standard", "AI chatbot — answers customers 24/7", "Unlimited website updates", "Lead capture & automation", "Hosting covered", "Direct WhatsApp support"].map((f, i) => (
+              {["Everything in Standard", "AI chatbot — answers customers 24/7", "Unlimited website updates", "Lead capture & automation", "Hosting covered", "Direct WhatsApp support", "Pricing scales with your business size"].map((f, i) => (
                 <div key={i} style={{ display: "flex", gap: "10px", fontSize: "13px", color: "#444", marginBottom: "8px", fontWeight: 300 }}>
                   <span style={{ color: "#111", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                 </div>
@@ -566,12 +566,12 @@ export default function App() {
           {[
             ["Web Design", "Custom 5-page website, mobile optimised", "£275", "one-off"],
             ["Domain (.co.uk)", "Your own professional web address", "£10", "per year"],
-            ["AI Chatbot", "24/7 customer assistant on your site", "£40", "per month"],
-            ["Google Business Setup", "Get found in local searches", "£100", "one-off"],
-            ["SEO Package", "On-page SEO + directory listings", "£100", "+ £35/mo"],
+            ["AI Chatbot", "24/7 customer assistant on your site", "£50", "per month"],
+            ["Google Business Setup", "Get found in local searches", "£285", "one-off"],
+            ["SEO Package", "On-page SEO + directory listings", "£250", "+ £35/mo"],
             ["Social Media Refresh", "Bio, profile, cover image, pinned post", "£295", "one-off"],
             ["Review Automation", "Automated Google review requests", "£150", "+ £35/mo"],
-            ["Inventory Tracking", "Waste reduction & cost cutting system", "£180", "+ £50/mo"],
+            ["Inventory Tracking", "Waste reduction & cost cutting system", "£250", "+ £50/mo"],
           ].map(([name, desc, price, freq], i) => (
             <Reveal key={i} delay={i * 0.03}>
               <div style={{ background: "#111", padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px" }}>
