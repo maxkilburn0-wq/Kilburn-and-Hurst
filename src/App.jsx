@@ -57,7 +57,7 @@ const SERVICES = [
     title: "Operations",
     tagline: "Cut costs. Run leaner.",
     desc: "Inventory tracking, waste reduction, and automated systems that save local businesses thousands per year.",
-    price: "£130",
+    price: "£180",
     monthly: "+ £50/mo",
     features: ["Waste tracking setup", "Staff training", "Weekly report", "Cost analysis", "Tailored to your business"],
   },
@@ -564,14 +564,14 @@ export default function App() {
         </Reveal>
         <div style={{ display: "flex", flexDirection: "column", gap: "1px", background: "#222", borderRadius: "12px", overflow: "hidden" }}>
           {[
-            ["Web Design", "Custom 5-page website, mobile optimised", "£200", "one-off"],
+            ["Web Design", "Custom 5-page website, mobile optimised", "£275", "one-off"],
             ["Domain (.co.uk)", "Your own professional web address", "£10", "per year"],
-            ["AI Chatbot", "24/7 customer assistant on your site", "£20", "per month"],
-            ["Google Business Setup", "Get found in local searches", "£49", "one-off"],
-            ["SEO Package", "On-page SEO + directory listings", "£99", "+ £24/mo"],
-            ["Social Media Refresh", "Bio, profile, cover image, pinned post", "£49", "one-off"],
-            ["Review Automation", "Automated Google review requests", "£74", "+ £11/mo"],
-            ["Inventory Tracking", "Waste reduction & cost cutting system", "£99", "+ £11/mo"],
+            ["AI Chatbot", "24/7 customer assistant on your site", "£40", "per month"],
+            ["Google Business Setup", "Get found in local searches", "£100", "one-off"],
+            ["SEO Package", "On-page SEO + directory listings", "£100", "+ £35/mo"],
+            ["Social Media Refresh", "Bio, profile, cover image, pinned post", "£295", "one-off"],
+            ["Review Automation", "Automated Google review requests", "£150", "+ £35/mo"],
+            ["Inventory Tracking", "Waste reduction & cost cutting system", "£180", "+ £50/mo"],
           ].map(([name, desc, price, freq], i) => (
             <Reveal key={i} delay={i * 0.03}>
               <div style={{ background: "#111", padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px" }}>
