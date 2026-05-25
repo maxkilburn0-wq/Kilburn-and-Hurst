@@ -162,8 +162,12 @@ export default function App() {
 
         {/* Nav */}
         <nav style={{ padding: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid #111" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer" }} onClick={() => setPage("home")}>
-            <div style={{ width: "6px", height: "6px", background: "#d4af37", borderRadius: "50%" }} />
+          <div style={{ display: "flex", alignItems: "center", gap: "8px", cursor: "pointer" }} onClick={() => setPage("home")}>
+            <svg width="28" height="24" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="22" fontFamily="Playfair Display, Georgia, serif" fontSize="26" fontWeight="600" fill="#d4af37">K</text>
+              <line x1="16" y1="2" x2="16" y2="26" stroke="#d4af37" strokeWidth="1"/>
+              <text x="17" y="22" fontFamily="Playfair Display, Georgia, serif" fontSize="22" fontWeight="600" fill="#d4af37">H</text>
+            </svg>
             <span style={{ fontWeight: 600, fontSize: "14px" }}>Kilburn & Hurst</span>
           </div>
           <button onClick={() => setPage("home")} style={{ background: "none", border: "1px solid #222", color: "#888", padding: "8px 16px", borderRadius: "50px", fontSize: "12px", cursor: "pointer", fontFamily: "'DM Sans', sans-serif" }}>
@@ -293,9 +297,13 @@ export default function App() {
         borderBottom: scrolled ? "1px solid rgba(0,0,0,0.06)" : "none",
         transition: "all 0.3s",
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: "6px", flexShrink: 0 }}>
-          <div style={{ width: "6px", height: "6px", background: "#111", borderRadius: "50%", flexShrink: 0 }} />
-          <span style={{ fontWeight: 600, fontSize: "14px", whiteSpace: "nowrap" }}>Kilburn & Hurst</span>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", flexShrink: 0 }}>
+          <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="22" fontFamily="Playfair Display, Georgia, serif" fontSize="26" fontWeight="600" fill="#111">K</text>
+            <line x1="16" y1="2" x2="16" y2="26" stroke="#111" strokeWidth="1"/>
+            <text x="17" y="22" fontFamily="Playfair Display, Georgia, serif" fontSize="22" fontWeight="600" fill="#111">H</text>
+          </svg>
+          <span style={{ fontWeight: 600, fontSize: "14px", whiteSpace: "nowrap", fontFamily: "'DM Sans', sans-serif", letterSpacing: "1px" }}>Kilburn & Hurst</span>
         </div>
         <div style={{ display: "flex", gap: "4px", alignItems: "center" }}>
           {["Services", "Pricing", "Contact"].map(l => (
@@ -691,12 +699,19 @@ export default function App() {
       {/* FOOTER */}
       <footer style={{ background: "#111", padding: "32px 20px" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "16px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-            <div style={{ width: "5px", height: "5px", background: "#f8f7f4", borderRadius: "50%" }} />
-            <span style={{ fontWeight: 600, fontSize: "13px", color: "#f8f7f4" }}>Kilburn & Hurst</span>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <svg width="28" height="24" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="22" fontFamily="Playfair Display, Georgia, serif" fontSize="26" fontWeight="600" fill="#f8f7f4">K</text>
+              <line x1="16" y1="2" x2="16" y2="26" stroke="#f8f7f4" strokeWidth="1"/>
+              <text x="17" y="22" fontFamily="Playfair Display, Georgia, serif" fontSize="22" fontWeight="600" fill="#f8f7f4">H</text>
+            </svg>
+            <span style={{ fontWeight: 600, fontSize: "13px", color: "#f8f7f4", fontFamily: "'DM Sans', sans-serif", letterSpacing: "1px" }}>Kilburn & Hurst</span>
           </div>
           <div style={{ fontSize: "11px", color: "#444" }}>© 2026 Kilburn & Hurst. All rights reserved.</div>
           <div style={{ fontSize: "11px", color: "#444" }}>kilburnhurst@outlook.com</div>
+          <div style={{ fontSize: "11px", color: "#444" }}>
+            <a href="https://instagram.com/kilburnandhurst" style={{ color: "#444", textDecoration: "none" }}>@kilburnandhurst</a>
+          </div>
         </div>
       </footer>
     </div>
