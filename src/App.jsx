@@ -17,7 +17,7 @@ const SERVICES = [
     title: "AI & Automation",
     tagline: "Your business, running 24/7.",
     desc: "Chatbots that answer customers, capture leads, and book appointments while you sleep.",
-    price: "£20/mo",
+    price: "From £30/mo",
     monthly: "add-on",
     features: ["Trained on your business", "Lead capture", "FAQ answering", "Website integration", "Live in 5 days"],
   },
